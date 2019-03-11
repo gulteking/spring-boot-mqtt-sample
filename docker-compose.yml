@@ -1,0 +1,20 @@
+version: "3.4"
+services:
+    mqtt:
+        image: eclipse-mosquitto
+        volumes:
+            - mosquitto_conf:/mosquitto/config 
+            - mosquitto_data:/mosquitto/data
+            - mosquitto_log:/mosquitto/log
+        networks:
+            - mqttnet
+        ports:
+            - 9001:9001
+            - 1883:1883
+volumes:
+    mosquitto_conf:
+    mosquitto_data:
+    mosquitto_log:
+networks:
+  mqttnet:
+    driver: bridge
