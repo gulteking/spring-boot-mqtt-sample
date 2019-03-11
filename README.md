@@ -42,6 +42,7 @@ Returns message array after 5 seconds:
     ]
 
 **MQTT SERVER DOCKER**
+
 You can also set up an Eclipse Mosquitto server(https://hub.docker.com/_/eclipse-mosquitto) with docker.
 
 If you didn't set up container before, enter project's main folder and type:
