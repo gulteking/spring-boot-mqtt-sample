@@ -1,3 +1,4 @@
+
 ## MQTT PUBLISHER AND SUBSCRIBER
 Sample Spring Boot application that publishes message to a topic on mqtt server and receives messages from specific topics.
 
@@ -40,3 +41,19 @@ Returns message array after 5 seconds:
         }
     ]
 
+**MQTT SERVER DOCKER**
+You can also set up an Eclipse Mosquitto server(https://hub.docker.com/_/eclipse-mosquitto) with docker.
+
+If you didn't set up container before, enter project's main folder and type:
+
+    docker-compose up -d
+
+If you have already setup container, 
+
+    docker-compose start
+   
+   to stop;
+   
+
+    docker-compose stop
+ 
