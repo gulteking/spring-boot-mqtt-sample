@@ -2,6 +2,7 @@
 Sample Spring Boot application that publishes message to a topic on mqtt server and receives messages from specific topics.
 
 **Before Run And Compile**
+
 You should change publisherId and server url from 
 
 > src/main/java/com/gulteking/mqttbackendserver/config/Mqtt.java
@@ -28,6 +29,7 @@ Edit Lines Below(publisher id optional):
 **Subscribe Messages From a Topic For X Milliseconds**
 
 **GET: /api/mqtt/subscribe?topic=test&wait_millis=5000**
+
 Returns message array after 5 seconds:
 
     [
