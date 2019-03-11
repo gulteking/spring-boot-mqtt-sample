@@ -11,10 +11,10 @@ Edit Lines Below(publisher id optional):
     private static final String MQTT_PUBLISHER_ID = "spring-server";  
     private static final String MQTT_SERVER_ADDRES= "tcp://127.0.0.1:1883";
 
-**Compile and Run**
+**Compile and Run(in pom.xml)**
 
     mvn clean install
-    java -jar mqtt-backend-server-0.0.1-SNAPSHOT.jar
+    java -jar target/mqtt-backend-server-0.0.1-SNAPSHOT.jar
 
 **Publish message(POST: /api/mqtt/publish)**
 
